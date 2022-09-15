@@ -1,0 +1,83 @@
+.box{
+  background: #FFFFFF;
+  border-radius: 25px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+.list-wrap{
+  text-align: center;
+  font-family: 'Catamaran';
+  font-style: normal; 
+  font-weight: 700; 
+  font-size: 20px;
+}
+.title-cloth{
+  text-align: center;
+  font-family: 'Catamaran';
+  font-style: normal; 
+  font-weight: 700; 
+  font-size: 16px;
+}
+.btn-wrap{
+  text-align: center;
+  font-family: 'Catamaran';
+  font-style: normal; 
+  font-weight: 700; 
+  font-size: 16px;
+  border-radius: 20px;
+  height: 50px;
+  padding: 3px 20px;
+  width: 120px;
+  border: 1px solid rgba(0,0,0,.125);
+  color: black;
+}
+.goto-mod:hover{
+  cursor: pointer;
+  background: #F7F9FA!important;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.img-left{
+  height: 200px;
+}
+
+.img-container{
+  text-align: center;
+}
+
+.take-box:hover{
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgb(8 35 48 / 24%);
+}
+
+.move-right:hover{
+  cursor: pointer;
+  color: #ff8080;
+}
+
+.pr-top{
+  height: 260px;
+}
+
+.pr-bot{
+  height: 260px;
+}
+
+.zoom:hover{
+  transform:scale(1.5);
+}
+
+.zoom{
+  transition: transform .2s; 
+}
