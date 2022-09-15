@@ -15,3 +15,5 @@ Tale modifica si trova alle linee 87-95 del file src/views/FrontEnd/HomePage.php
 Nel file src/index.php è possibile trovare le rotte del sito web.
 
 Nel caso si volesse visionare il DB è necessario un'applicazione che possa aprirlo, DB Browser (SQLite), si trova in src/db/IMALLDB.db.
+
+La cartella I-MALL è la cartella a cui ci si rifersci per la build con docker.
