@@ -183,6 +183,7 @@
   var counterTop = <?=$top?>;
   var counterBottom = <?=$bot?>;
   var prodArray = [];
+  var back = "" + "<?=$parameters['selectedId']?>";
 
   var elementPrTop = [];
   var elementPrBot = [];
@@ -222,8 +223,9 @@
       if (document.getElementsByClassName("pr-bot")[i].getAttribute("idP") != "-1")
         prodArray.push(document.getElementsByClassName("pr-bot")[i].getAttribute("idP"));
     }
-    if(prodArray.length > 0)
-      window.location.href = "/Show/<?=$parameters["id"]?>/" + (prodArray.toString()).replaceAll(",", "&&");
+    if(prodArray.length > 0){
+      window.location.href = "/Show/<?=$parameters["id"]?>/" + (prodArray.toString()).replaceAll(",", "&&") + "/" + back;
+    }
     else{
       var toastLiveExample = document.getElementById('liveToast');
       var toast = new bootstrap.Toast(toastLiveExample)

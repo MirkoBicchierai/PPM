@@ -29,7 +29,7 @@ $router->map('POST','/get-face', array('controller' => 'FrontEnd', 'action' => '
 $router->map('POST','/login', array('controller' => 'FrontEnd', 'action' => 'login', 'view' =>'none'), 'login');
 $router->map('GET','/RecommendedCloth/[:id]', array('controller' => 'FrontEnd', 'action' => 'RecommendedCloth', 'view' =>'RecommendedCloth'), 'RecommendedCloth');
 $router->map('GET','/Select/[:id]/[:selectedId]', array('controller' => 'FrontEnd', 'action' => 'Select', 'view' =>'Select'), 'Select');
-$router->map('GET','/Show/[:id]/[:selectedId]', array('controller' => 'FrontEnd', 'action' => 'Show', 'view' =>'Show'), 'Show');
+$router->map('GET','/Show/[:id]/[:selectedId]/[:back]', array('controller' => 'FrontEnd', 'action' => 'Show', 'view' =>'Show'), 'Show');
 
 $match = $router->match();
 $controller = (isset($match['target']['controller']))?$match['target']['controller']:'404';

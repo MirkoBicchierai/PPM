@@ -97,7 +97,7 @@ switch ($action) {
         	if(in_array($row["IDP"], $prArray))
         		$list[] = $row;
         }
-        $back = (explode("&&", $parameters["selectedId"]))[0];
+        $back = $parameters["back"];
         
 	break;
 
